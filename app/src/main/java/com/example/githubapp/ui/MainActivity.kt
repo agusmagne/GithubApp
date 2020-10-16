@@ -60,11 +60,11 @@ class MainActivity : AppCompatActivity(), MainView {
         }
     }
 
-    private fun showProgress() {
+    override fun showProgress() {
         progressbar?.visibility = View.VISIBLE
     }
 
-    private fun hideProgress() {
+    override fun hideProgress() {
         progressbar?.visibility = View.INVISIBLE
     }
 

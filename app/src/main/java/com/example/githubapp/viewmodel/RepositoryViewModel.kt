@@ -27,6 +27,7 @@ class RepositoryViewModel(private val context: Context, private val iMainView: M
 
     fun searchRepositories(repository: String) {
         if (repository.isNotBlank()) {
+            iMainView.showProgress()
             val retrofit = GithubService.getGithubService()
             val githubApi = retrofit.create(GithubApi::class.java)
             this.githubApi = githubApi

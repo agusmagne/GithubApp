@@ -6,5 +6,7 @@ import com.example.githubapp.model.GithubRepositoryDTO
 interface MainView {
 
     fun createDetailsActivity(repositoryDTO: GithubRepositoryDTO, readme: GithubReadme?)
+    fun showProgress()
+    fun hideProgress()
 
 }
