@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <string name="GET_REPOS_ERROR">Error trying to get repositories</string>
+</resources>
